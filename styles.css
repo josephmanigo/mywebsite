@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+:root {
+  --bg: #0f172a;
+  --accent: #3b82f6;
+  --light: #f1f5f9;
+  --muted: #94a3b8;
+  --card-bg: #1e293b;
+  --hover: #334155;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--bg);
+  color: var(--light);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e293b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+
+.hero {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #dbeafe;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: #1e3a8a;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #e2e8f0;
+}
+
+
+.products-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+  background-color: var(--hover);
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.about-section {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-section p {
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1e293b;
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
